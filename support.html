@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Incarta — Assistenza</title>
+<link rel="icon" type="image/png" href="icon-favicon-32.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F6F2E7; --paper-white:#FFFDF8; --ink:#2B2A26; --ink-dim:#6b6a62;
+    --seal:#3E7C6B; --border:rgba(43,42,38,0.12);
+    --font-display:'Fraunces',serif; --font-body:'Inter',sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0; background:var(--paper); color:var(--ink); font-family:var(--font-body); line-height:1.65; font-size:15.5px;}
+  .wrap{max-width:640px; margin:0 auto; padding:56px 24px 80px;}
+  .brand{display:flex; align-items:center; gap:10px; margin-bottom:36px;}
+  .brand-mark{width:32px; height:32px;}
+  .brand-word{font-family:var(--font-display); font-weight:600; font-size:19px;}
+  h1{font-family:var(--font-display); font-size:30px; font-weight:600; margin:0 0 8px;}
+  .lead{color:var(--ink-dim); margin:0 0 40px; max-width:480px;}
+  h2{font-family:var(--font-display); font-size:18px; font-weight:600; margin:0 0 12px;}
+  .card{background:var(--paper-white); border:1px solid var(--border); border-radius:12px; padding:22px 24px; margin-bottom:18px;}
+  a.btn{
+    display:inline-block; background:var(--seal); color:#F6F2E7; text-decoration:none;
+    padding:10px 18px; border-radius:8px; font-weight:600; font-size:14px; margin-top:6px;
+  }
+  details{border-bottom:1px solid var(--border); padding:12px 0;}
+  details:last-child{border-bottom:none;}
+  summary{font-weight:600; cursor:pointer; list-style:none;}
+  summary::-webkit-details-marker{display:none;}
+  summary::before{content:'+ '; color:var(--seal);}
+  details[open] summary::before{content:'− ';}
+  details p{margin:10px 0 0; color:var(--ink-dim); font-size:14px;}
+  footer{margin-top:48px; font-size:12.5px; color:var(--ink-dim);}
+  a{color:var(--seal);}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="brand">
+    <svg class="brand-mark" viewBox="0 0 40 40" fill="none">
+      <circle cx="20" cy="20" r="18" stroke="#3E7C6B" stroke-width="1.6" stroke-dasharray="2.5 2.5"/>
+      <path d="M13 20l4.5 4.5L27 15" stroke="#3E7C6B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <span class="brand-word">Incarta</span>
+  </div>
+
+  <h1>Assistenza</h1>
+  <p class="lead">Prima di scriverci, dai un'occhiata alle domande più comuni qui sotto — spesso la risposta è immediata.</p>
+
+  <div class="card">
+    <h2>Scrivici</h2>
+    <p style="color:var(--ink-dim); margin-bottom:14px;">Rispondiamo di norma entro 2 giorni lavorativi.</p>
+    <a class="btn" href="mailto:support@incarta-app.example?subject=Richiesta%20di%20assistenza%20Incarta">Scrivi a support@incarta-app.example</a>
+  </div>
+
+  <h2 style="margin-top:36px;">Domande frequenti</h2>
+
+  <details>
+    <summary>I miei file vengono caricati online?</summary>
+    <p>No. Ogni conversione avviene sul tuo dispositivo. L'unica connessione richiesta è quella che carica l'app stessa, non per elaborare i tuoi documenti.</p>
+  </details>
+  <details>
+    <summary>Come annullo l'abbonamento Pro?</summary>
+    <p>Dal tuo account App Store (Impostazioni → il tuo nome → Abbonamenti) o Google Play (Play Store → Menu → Abbonamenti). Non è possibile annullarlo dall'interno dell'app, per policy degli store.</p>
+  </details>
+  <details>
+    <summary>Come richiedo un rimborso?</summary>
+    <p>Entro 14 giorni dall'acquisto, per qualsiasi motivo, scrivendo a support@incarta-app.example. Su iOS puoi anche richiederlo direttamente da <a href="https://reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a>.</p>
+  </details>
+  <details>
+    <summary>Ho comprato il Pro ma l'app dice ancora "Gratis"</summary>
+    <p>Apri l'app, vai su Impostazioni → Ripristina acquisti. Se il problema persiste dopo il ripristino, scrivici indicando lo store usato per l'acquisto (App Store o Google Play) e la data approssimativa.</p>
+  </details>
+  <details>
+    <summary>Uno strumento non converte correttamente il mio file</summary>
+    <p>Scrivici indicando: strumento usato, formato del file originale e, se possibile, un file di esempio non riservato che riproduce il problema.</p>
+  </details>
+
+  <footer>
+    Incarta — vedi anche la nostra <a href="privacy-e-termini.html">informativa privacy e i termini di servizio</a>.
+  </footer>
+
+</div>
+</body>
+</html>
